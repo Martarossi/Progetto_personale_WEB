@@ -1,7 +1,4 @@
 <script>
-    //qui posso scrivere lo javascript, quindi hava, html, css
-    // ora entriamo nel vivo dello stato, svelte tiene conto se si aggiornerà lo 0
-    //è una variabile
     import ClicksCounter from "$lib/components/ClicksCounter.svelte";
 </script>
 
