@@ -1,5 +1,7 @@
 <script>
     import ClicksCounter from "$lib/components/ClicksCounter.svelte";
+
+    let count = $state(5) //è all'interno della pagina 
 </script>
 
 <h1>Welcome to SvelteKit</h1>
@@ -8,7 +10,8 @@
     documentation
 </p>
 
-<ClicksCounter />
+<ClicksCounter bind:initialCount={count} />
+<p> count from parent is {count}</p>
 
 <style>
     h1 {

@@ -1,8 +1,6 @@
 <script>
-    //qui posso scrivere lo javascript, quindi hava, html, css
-    // ora entriamo nel vivo dello stato, svelte tiene conto se si aggiornerà lo 0
-    //è una variabile
-    let count = $state(0)
+    let {initialCount: count = $bindable()} = $props()
+    //si può permettere di dire che fa il collegamento al parents (page.svelte)
     let doubled = $derived(count * 2)
 </script>
 
